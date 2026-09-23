@@ -9,7 +9,7 @@
   "repository": "https://github.com/laurent22/joplin/tree/dev/packages/onenote-converter",
   "main": "./renderer/pkg/renderer.js",
   "scripts": {
-    "build": "node ./tools/build.js --profile=release",
+    "build": "node init && node ./tools/build.js --profile=release",
     "buildDev": "node ./tools/build.js --profile=dev",
     "test": "node ./tools/test.js"
   },

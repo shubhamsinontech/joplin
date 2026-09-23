@@ -38,13 +38,13 @@
     "directory": "packages/turndown"
   },
   "scripts": {
-    "build-all": "npm run build-cjs && npm run build-es && npm run build-umd && npm run build-iife",
-    "build-cjs": "rollup -c config/rollup.config.cjs.mjs && rollup -c config/rollup.config.browser.cjs.mjs",
-    "build-es": "rollup -c config/rollup.config.es.mjs && rollup -c config/rollup.config.browser.es.mjs",
-    "build-umd": "rollup -c config/rollup.config.umd.mjs && rollup -c config/rollup.config.browser.umd.mjs",
-    "build-iife": "rollup -c config/rollup.config.iife.mjs",
-    "build-test": "browserify test/turndown-test.js --outfile test/turndown-test.browser.js",
-    "build": "npm run build-cjs",
+    "build-all": "node init && npm run build-cjs && npm run build-es && npm run build-umd && npm run build-iife",
+    "build-cjs": "node init && rollup -c config/rollup.config.cjs.mjs && rollup -c config/rollup.config.browser.cjs.mjs",
+    "build-es": "node init && rollup -c config/rollup.config.es.mjs && rollup -c config/rollup.config.browser.es.mjs",
+    "build-umd": "node init && rollup -c config/rollup.config.umd.mjs && rollup -c config/rollup.config.browser.umd.mjs",
+    "build-iife": "node init && rollup -c config/rollup.config.iife.mjs",
+    "build-test": "node init && browserify test/turndown-test.js --outfile test/turndown-test.browser.js",
+    "build": "node init && npm run build-cjs",
     "prepare": "npm run build"
   },
   "gitHead": "500e4c02809d3ebe463aa590e86f541d1ef0661c"

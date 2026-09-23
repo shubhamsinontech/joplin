@@ -49,7 +49,6 @@ packages/tools/commit_hook.txt
 packages/tools/github_oauth_token.txt
 packages/app-desktop/main-html-out.js
 lerna-debug.log
-.env
 docs/**/*.mustache
 .idea
 /readme/i18n
@@ -2263,3 +2262,7 @@ packages/tools/website/utils/types.js
 packages/whisper-voice-typing/src/index.js
 packages/whisper-voice-typing/src/specs/Whisper.nitro.js
 # AUTO-GENERATED - EXCLUDED TYPESCRIPT BUILD
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
